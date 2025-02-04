@@ -18,9 +18,6 @@ export default function FamilyDetails() {
             <li>
               <strong>Father:</strong> Late Shaik Maqbool Hussain
             </li>
-            <li>
-              <strong>Mother:</strong> Late Ameena Begum
-            </li>
           </ul>
         </motion.div>
         <motion.div whileHover={{ scale: 1.05 }} className="bg-white bg-opacity-10 p-6 rounded-lg shadow-lg">
