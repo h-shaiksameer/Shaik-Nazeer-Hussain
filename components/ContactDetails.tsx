@@ -16,7 +16,7 @@ export default function ContactDetails() {
         <div className="mb-4">
           <h3 className="text-xl font-bold mb-2">Residential Address</h3>
           <p>Hashamabad, Dastagir Nagar, Chandrayangutta, Hyderabad</p>
-          <p>House Number: 18-13-6/88/8/20</p>
+          {/* <p>House Number: 18-13-6/88/8/20</p> */}
         </div>
         <div>
           <h3 className="text-xl font-bold mb-2">Contact Numbers</h3>
