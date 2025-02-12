@@ -11,6 +11,7 @@ export default function EducationOccupation() {
       transition={{ duration: 0.8 }}
       className="mb-16"
     >
+      {/* Education & Occupation Section */}
       <h2 className="text-3xl font-bold mb-4 text-center">Education & Occupation</h2>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
         <motion.div whileHover={{ scale: 1.05 }} className="bg-white bg-opacity-10 p-6 rounded-lg shadow-lg">
@@ -27,27 +28,33 @@ export default function EducationOccupation() {
       </div>
 
       {/* Business Card Section */}
-      <motion.div
-        whileHover={{ scale: 1.1 }}
-        className="mt-6 mx-auto w-full max-w-xs p-1 rounded-lg relative overflow-hidden"
-      >
+      <div className="mt-12 flex flex-col items-center">
+        {/* Title */}
+        <motion.h2
+          initial={{ opacity: 0, y: -20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1 }}
+          className="text-4xl md:text-6xl font-extrabold text-white mb-6 uppercase"
+        >
+          Khans Motors
+        </motion.h2>
+
+        {/* Business Card Image */}
         <motion.div
-          className="absolute inset-0 bg-gradient-to-r from-yellow-400 via-red-500 to-pink-500 opacity-50 animate-pulse rounded-lg"
-        ></motion.div>
-        <motion.div
-          whileHover={{ scale: 1.15 }}
+          whileHover={{ scale: 1.02 }}
           transition={{ duration: 0.5 }}
-          className="relative bg-black p-2 rounded-lg shadow-lg"
+          className="relative w-full max-w-screen-xl h-[75vh] flex justify-center items-center overflow-hidden shadow-2xl border-4 border-yellow-500 rounded-lg bg-black"
         >
           <Image
             src="/Business Card.jpeg"
             alt="Business Card"
-            width={400}
-            height={250}
-            className="rounded-lg object-cover"
+            layout="intrinsic"
+            width={1200}
+            height={600}
+            className="rounded-lg"
           />
         </motion.div>
-      </motion.div>
+      </div>
     </motion.section>
   )
 }
