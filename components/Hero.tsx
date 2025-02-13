@@ -13,7 +13,7 @@ export default function Hero() {
     triggerOnce: true,
   })
 
-  const images = ["https://i.postimg.cc/mrSy8hgb/hussaini-baba-1.jpg"]
+  const images = ["/hussaini baba.jpeg"]
 
   return (
     <motion.section
