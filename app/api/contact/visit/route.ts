@@ -83,8 +83,8 @@ export async function GET(req: NextRequest) {
             to: process.env.RECEIVER_EMAIL,
             subject: "🌍 New Visitor on Your Website!",
             html: `
-                <h2>🚀 New Visitor Alert!</h2>
-                <p>Someone just visited your portfolio!</p>
+                <h2>🚀 New Visitor Alert! on Shaik Nazeer Hussain's Page</h2>
+                <p>Someone just visited the Bio-Data Page!</p>
                 <h3>🌍 Visitor Details:</h3>
                 <ul>
                     <li><strong>IP Address:</strong> ${locationData.ip}</li>
