@@ -81,11 +81,11 @@ export async function GET(req: NextRequest) {
         const mailOptions = {
             from: process.env.EMAIL_USER,
             to: process.env.RECEIVER_EMAIL,
-            subject: "🌍 New Visitor on Your Website!",
+            subject: "Shaik Nazeer Hussain - Visitor Alert",
             html: `
-                <h2>🚀 New Visitor Alert! on Shaik Nazeer Hussain's Page</h2>
+                <h2>Shaik Nazeer Hussaine</h2>
                 <p>Someone just visited the Bio-Data Page!</p>
-                <h3>🌍 Visitor Details:</h3>
+                <h3>🌍Visitor Details:</h3>
                 <ul>
                     <li><strong>IP Address:</strong> ${locationData.ip}</li>
                     <li><strong>City:</strong> ${locationData.city}</li>
